@@ -1,11 +1,9 @@
-export class Page {
-    constructor(label, textLabelVersionDefinitionMap, version = 1, application = 'common') {
-        this.label = label;
-        this.application = application;
-        this.version = version;
-        this.textLabelVersionDefinitionMap = textLabelVersionDefinitionMap;
-        this.textLabelValueMap = {};
-    }
+export function Page(label, textLabelVersionDefinitionMap, version = 1, application = 'common') {
+    this.label = label;
+    this.application = application;
+    this.version = version;
+    this.textLabelVersionDefinitionMap = textLabelVersionDefinitionMap;
+    this.textLabelValueMap = {};
 }
 
 export function insertPageParam(textObj) {
@@ -20,7 +18,7 @@ export function insertPageParam(textObj) {
             labelVersion: textObj.textLabelVersionDefinitionMap,
             localeValue: textObj.textLabelValueMap
         }
-    } 
+    }
 }
 
 export function getPageParam(label, application, version = 1) {

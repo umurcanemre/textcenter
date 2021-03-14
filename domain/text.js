@@ -1,10 +1,8 @@
-export class Text {
-    constructor(label, localeValueMap, version = 1, application = 'common') {
-        this.label = label;
-        this.version = version;
-        this.localeValueMap = localeValueMap;
-        this.application = application;
-    }
+export function Text(label, localeValueMap, version = 1, application = 'common') {
+    this.label = label;
+    this.version = version;
+    this.localeValueMap = localeValueMap;
+    this.application = application;
 }
 
 export function insertTextParam(textObj) {

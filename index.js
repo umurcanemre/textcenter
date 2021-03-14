@@ -1,5 +1,5 @@
 import { readDDB, writeDDB, dropTables } from './connection/dynamo.js'
-import { Page, insertPageParam, getPageParam } from './domain/page.js';
+import { Page, insertPageParam, getPageParam } from './domain/page.js'
 import { Text, getTextParam, insertTextParam } from './domain/text.js'
 
 function objTest2() {

@@ -36,7 +36,7 @@ export function writeDDB(param, callback) {
 }
 
 export function dropTables() {
-  ddb.deleteTable({"TableName": "Text"}, function (err, data) {
+  ddb.deleteTable({ "TableName": "Text" }, function (err, data) {
     if (err) {
       throw new Error(err + "\nWith parameters " + JSON.stringify(param))
     }
