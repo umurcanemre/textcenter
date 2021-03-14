@@ -28,3 +28,7 @@ export function getTextParam(label, application, version = 1) {
         }
     }
 }
+
+//module.exports.Text = Text
+//module.exports.insertTextParam = insertTextParam
+//module.exports.getTextParam = getTextParam
